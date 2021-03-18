@@ -290,7 +290,7 @@ CONF_SCHEMA = {
             'type': 'object',
             'default': {},
             'properties': {
-                'process_throttle_secs': {'type': 'integer'},
+                'process_throttle_secs': {'type': 'number', 'minimum': 0.0},
                 'interval': {'type': 'integer'},
                 'sd_notify': {'type': 'boolean'},
             }
